@@ -20,13 +20,13 @@
 기본 태그 목록 
 ---
 ```html
-<p>글 본문</p>
-<h1>글 제목</h1>
-<img src="이미지 경로">
-<a href="">링크</a>
-<button>버튼</button>
-<ul><li>리스트</li></ul>
-<ol><li>리스트</li></ol>
+  <p>글 본문</p>
+  <h1>글 제목</h1>
+  <img src="이미지 경로">
+  <a href="">링크</a>
+  <button>버튼</button>
+  <ul><li>리스트</li></ul>
+  <ol><li>리스트</li></ol>
 ```
 - 태그를 열었으면 </태그명>으로 닫기
 
@@ -61,9 +61,9 @@
 - 링크를 만들 수 있는 <a></a> 태그에 글 대신 그림 넣기
  
 ```html
-<a href="http://naver.com">
-  <img src="">
-</a>
+  <a href="http://naver.com">
+    <img src="">
+  </a>
 ```
 - HTML은 태그 안에 태그를 넣어줄 수도 있음
 
