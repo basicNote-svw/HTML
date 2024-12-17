@@ -1,0 +1,68 @@
+.main-background{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);    /* ../ : 상위폴더로 이동 */
+    /* 배경이미지 크기 조정 */
+    /* cover : 배경을 잘라서라도 빈공간 없이 배경으로 꽉 채우기 */
+    /* contain : 여백이 남아도 괜찮으니 배경이 잘리면 안됨 */
+    background-size: cover;
+    /* 배경이미지는 꽉 차지 않으면 반복 */
+    background-repeat: no-repeat;
+    /* 배경 위치 조정 */
+    background-position: center;
+
+    /* 스크롤시 배경 위치 조정 */
+    /* background-attachment: fixed; */
+
+    /* 박스에 보정입히기 */
+    /* 박스 안에 글씨가 있다면 글씨에도 필터 입혀짐 */
+    /* filter: brightness(70%) */
+    
+    /* 배경 여러개 겹치기 */
+    /* background-image: url(../img/shoes.jpg), url(...), url(...); */
+
+    /* 배경에 색 overlay 주기 */
+
+    padding: 1px;
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 50px;
+    margin-top: 80px;
+    padding-left: 50px;
+}
+
+.ads {
+    padding: 10px 50px 30px 30px;
+    color: white;
+    text-align: right;
+    /* background-color: rgba(45, 44, 44, 0.435); */
+}
+
+.ads p {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.btn{
+    position: absolute;
+    right: 130px;
+}
+
+.btn button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+
+.btn button:hover{
+    background-color: lightblue;
+}
