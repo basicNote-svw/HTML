@@ -1,0 +1,136 @@
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content{
+    width: 70%;
+    height: 150px;
+    background-color: #eee;
+    float: left;
+    padding: 30px;
+}
+
+.blog-img{
+    width: 20%;
+    height: 150px;
+    padding: 30px 10px;
+    float: right;
+}
+
+.blog-img img{
+    height: 150px;
+}
+
+.blog-profile{
+    width: 50px;
+    float: left;
+}
+
+.blog-name{
+    float: left;
+}
+
+/* *{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    border-bottom: 1px solid lightgray; 
+    display: flex;
+}
+
+.container>.left{
+    width: 80%;
+    height: 150px;
+    padding: 30px;
+}
+
+.container>.left>.left-first{
+    width: 100%;
+    height: 30px;
+}
+
+.container>.left>.left-first>.profile-img{
+    width: 4%;
+    float: left;
+}
+.container>.left>.left-first>.profile{
+    width: 95%;
+    height: 30px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container>.left>.left-first>.profile>.profile-name{
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.container>.left>.left-first>.profile>.post-time{
+    font-size: .7rem;
+    color: gray;
+}
+
+.container>.left>.left-first img{
+    width: 100%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container>.left>.left-second{
+    clear: both;
+    margin: 20px 0;
+    position: relative;
+}
+
+.container>.left>.left-second>.post-title{
+    margin-bottom: 10px;
+}
+
+.container>.left>.left-second>.post-content{
+    font-size: .9rem;
+    color: gray;
+}
+
+.container>.left>.left-second .material-symbols-outlined{
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.container>.right{
+    width: 20%;
+    height: 150px;
+    position: relative;
+}
+
+.container>.right>.post-img{
+    padding: 30px;
+    height: 150px;
+}
+
+.container>.right>.post-img>img{
+    width: 100%;
+    height: 150px;
+}
+
+.container>.right>.post-img>.more{
+    position: absolute;
+    background-color: gray;
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    right: 30px;
+    bottom: -30px;
+    cursor: pointer;
+}
+ */
