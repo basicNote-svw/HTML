@@ -1,13 +1,35 @@
+/* selector 문법 중 > : ~ 안에 있는 직계 자식 */
+/* selector 문법 중 공백 : ~ 안에 있는 모든 자식 */
+.navbar li{
+    display: inline-block; 
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar>li a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: inherit;     /* 기본 색상 유지 (상속된 색상) */
+}
+
 .container{
     width: 800px;
+    height: 210px;
     margin-left: auto;
     margin-right: auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .blog-content{
     width: 70%;
     height: 150px;
-    background-color: #eee;
     float: left;
     padding: 30px;
 }

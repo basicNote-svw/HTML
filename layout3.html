@@ -17,6 +17,17 @@
         </style>
     </head>
     <body>
+
+        <!-- nav, section, footer 등 기능은 div 와 같음 -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">공연</a></li>
+                <li><a href="#">맛집</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">뷰티</a></li>
+            </ul>
+        </nav>
+
         <div class="container">
             <div class="blog-content">
                 <div>
@@ -24,10 +35,12 @@
                     <div class="blog-name">
                         <!-- h, p 태그는 기본 margin 존재 -->
                         <h4 style="margin: 0 8px;">이름</h4>
-                        <p style="margin: 0 0 20px 8px; font-size: .8rem; color: gray;">날짜</p>
+                        <p style="margin: 0 0 10px 10px; font-size: .8rem; color: gray;">날짜</p>
                     </div>
                 </div>
-                <div style="clear: both;">
+                <!-- float 관련 문제 : float 준 요소 다음에 clear:both 넣은 <div> 추가하는걸 추천 -->
+                <div style="clear: both; "></div>
+                <div style="margin-top: 10px">
                     <h3>블로그글</h3>
                     <p style="color: gray; font-size: 1rem;">가성비 맛집 발견</p>
                 </div>
