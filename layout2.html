@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>document</title>
+        <link href="css/layout2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- inline-block 이용한 레이아웃 만들기 -->
+        <div class="container">     <!-- 감싸는 wrapper 박스(container 박스) 만들어두면 유용함 -->
+            <div class="header"></div>
+            <!-- inline-block 사용하면 박스사이 공백제거가 번거로움 -->
+            <div class="left-menu"></div><!--
+                [inline-block 사용시 공백제거 방법]
+                1. 박스사이 주석기호 활용
+                2. 부모태그에 font-size: 0px;
+                    부모태그로부터 inherit 되는 스타일은 중요도 가장 낮음
+         --><div class="right-menu">
+                <p>안녕하세요</p>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
