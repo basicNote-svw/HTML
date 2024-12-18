@@ -95,3 +95,54 @@ html{
     border: none;
     background-color: lightgray;
 }
+
+.contact-form{
+    margin-bottom: 100px;
+}
+
+form{
+    border: 1px solid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 50px;
+    position: relative;
+}
+
+form input[type=email], input[type=text] {
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+form p{
+    margin-bottom: 5px;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-name div {
+    flex: 1;
+}
+
+form input[type=checkbox] {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+form input[type=submit] {
+    width: 120px;
+    height: 35px;
+    background-color:orange;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
