@@ -1,0 +1,7 @@
+table {
+    border-collapse: collapse;  /* table 의 기본적 틈 제거 */
+}
+
+th, td {
+    border: 1px solid;
+}
