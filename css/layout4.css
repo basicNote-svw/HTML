@@ -63,6 +63,7 @@ html{
     position: absolute;
     bottom: 140px;
     right: 130px;
+    /* z-index: 5; */
 }
 
 .main-btn button {
@@ -81,7 +82,8 @@ html{
 }
 
 .main-box {
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
     height: 200px;
     position: relative;
     left: 0;

@@ -85,9 +85,11 @@ position : absolute 를 적용한 요소 가운데 정렬
 ### 박스를 만들 때 주의점
 - 원래 div 박스에 width를 주게되면 padding, border 고려 X
 
+  - width 는 content 영역의 너비를 의미
+
   - padding 안쪽 부분만 실제 width 로 설정
 
-   - 200px의 박스를 만들어도, padding 을 많이 주게 되면 실제 보여지는 박스의 폭이 padding 만큼 늘어ska
+   - 200px의 박스를 만들어도, padding 을 많이 주게 되면 실제 보여지는 박스의 폭이 padding 만큼 늘어남
 
 > 이미지 참고
 
@@ -171,6 +173,5 @@ CSS normalize
 ```
  
 
- <br>
+<br>
 
- 
