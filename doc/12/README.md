@@ -96,4 +96,93 @@ input[type=email] {
 
 <br> 
 
+---
 
+<br>
+
+
+form 레이아웃 제작
+---
+- 예시 디자인 위에 박스부터 그려놓고 그대로 div 로 구현
+
+> html 
+```html
+<form>
+  <div class="w-100">
+    <input>
+  </div>
+  <div class="w-50">
+    <input>
+  </div>
+  <div class="w-50">
+    <input>
+  </div>
+  <div class="w-100">
+    <textarea></textarea>
+  </div>
+</form>
+```
+- 가로로 꽉찬 input들 = w-100 이라는 div
+
+    - w-100 = width : 100%
+
+- 가로로 반반 차지할 input들 = w-50 이라는 div
+
+    - w-50 = width : 50%; float : left 
+
+- 만약 float 사용시 clear : both 필수
+ 
+<br>
+ 
+---
+ 
+<br>
+ 
+
+input 태그 디자인
+---
+- 가로로 100% 폭, padding 조금, box-sizing : border-box 적용
+
+    - border-box 안해놓으면 폭이 padding 을 포함해서 조금 커질 수 있기 때문
+
+<br>
+
+---
+
+<br>
+
+전송버튼
+---
+> html
+```html
+<form>
+  <button type="submit">전송</button>
+  <input type="submit">
+</form>
+```
+- 두개 중 하나 사용
+
+<br>
+
+---
+
+<br>
+ 
+
+label 태그와 for 속성
+---
+> html
+```html
+<input type="checkbox" id="subscribe">
+<label for="subscribe">누르기</label>
+```
+- label 과 for 속성을 적절히 활용하면 input 대신 label 눌러도 input 선택 가능
+
+    - input 의 id, label 의 for 속성을 똑같이 맞줘주기
+
+- \<input> 에 제목이 필요할 때도 h, p 태그 대신 \<label> 태그를 가끔 이용
+
+
+ 
+
+<br>

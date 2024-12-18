@@ -133,6 +133,7 @@ form p{
 form input[type=checkbox] {
     margin-top: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 form input[type=submit] {
