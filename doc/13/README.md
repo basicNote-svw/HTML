@@ -134,8 +134,130 @@ display : table
 - 이럴 일은 거의 없기 때문에 참고로만 알아두기
 
 <br>
- 
 
+---
+
+<br>
+
+nth-child 셀렉터 
+---
+> css
+```css
+.cart-table td:nth-child(2) {
+  color: red;
+} 
+```
+- :nth-child(n) : 여러 요소를 찾은 다음 원하는 n번째 요소만 스타일을 주고 싶을 때 사용 
+
+  - .cart-table 안에 있는 모든 td를 찾은 다음 2번째 나오는 td에만 color 적용
+
+- 테이블에서 원하는 순서의 셀에 스타일줄 때 유용하게 사용
+
+<br>
+
+> css
+```css
+.cart-table td:nth-child(even) {
+  color: red;
+} 
+```
+- even : 짝수로 등장하는 td에만 스타일을 줄 수 있음
+
+  - odd : 홀수
+
+<br>
+
+> css
+```css
+.cart-table td:nth-child(3n+0) {
+  color: red;
+}
+```
+- 3의 배수로 등장하는 3,6,9,12.. 번째 등장하는 요소에만 스타일을 줄 수 있음
+
+  - 3n + 1 작성시 (3의배수 +1) 번째 등장하는 요소에만 스타일을 줄 수 있음 
+
+<br>
+
+### 포인트1. 테두리 색상은 밑에만 넣고 싶으면
+> css
+```css
+td, th {
+  border-bottom : 1px solid black;
+}
+```
+- border-bottom 사용
+
+<br>
+
+### 포인트2. 셀 블록마다 width 설정 가능
+> html
+```html
+<table>
+  <tr>
+    <td class="name">상품명</td>
+    <td class="price">가격</td>
+    <td>수량</td>
+  </tr>
+</table>
+```
+
+> css
+```css
+.name {
+  width : 50%     /* 최대한 이만큼 차지해달라는 뜻 */ 
+}
+.price {
+  width : 20%
+}
+```
+- 하나의 td에 width를 주어도 전체 열의 width 변경됨
+
+<br>
+
+### 포인트3. td 여러개를 합치고 싶으면
+> html
+```html
+<td colspan="4"></td>
+```
+- colspan에 원하는 숫자를 넣으면 그 숫자만큼 옆의 셀을 합쳐줌
+
+<br>
+
+#### 💡 border-collapse 속성을 table태그에 적용하면 border-radius가 안먹는 경우
+
+- table 태그에 border-radius가 안먹을 때 1. 
+> css
+```css
+table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+(왼쪽위에있는 td) {
+  border-top-left-radius : 5px;
+}
+```
+
+<br>
+
+- table 태그에 border-radius가 안먹을 때 2. 
+> css
+```css
+table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+}
+```
+- box-shadow 속성을 이용해 테두리를 가짜로 만들어내는 편법
+
+  - box-shadow : 그림자 넣는 속성
+
+ 
+<br>
+ 
 
 
 
