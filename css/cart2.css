@@ -79,15 +79,19 @@
     height: 50px;
 }
 
-.pay-block a{
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link{  /* 방문전 링크 스타일 */
     color: rgb(61, 89, 141);
 }
 
-.pay-block a:visited{
-    color: inherit;
+.custom-link:visited{   /* 방문후 링크 스타일 */
+    color: rgb(61, 89, 141);
 }
 
-button{
+.btn{
     background-color: rgb(61, 89, 141);
     color: white;
     border: none;
@@ -96,6 +100,19 @@ button{
     height: 50px;
     position: absolute;
     right: 50px;
+    cursor: pointer;
+}
+
+.btn:hover{     /* :hover 마우스 올릴 때 스타일 (pseudo-class) */
+    background-color: gray;
+}
+
+.btn:active{    /* :active 클릭중 스타일 (pseudo-class) */
+    background-color: coral;
+}
+
+.btn:focus{     /* :focus 커서 찍혀있을 때 스타일 (pseudo-class) */
+    background-color: cornflowerblue;
 }
 
 table th:nth-child(2),
