@@ -1,8 +1,25 @@
+@font-face {
+    font-family: '작명';
+    src : url(../font/NanumSquareR.woff);
+}
+
+@font-face {
+    font-family: '작명2';
+    font-weight: 800;
+    src : url(../font/NanumSquareB.woff);
+}
+
+h4, h3 {
+    transform: rotate(0.03deg);
+}
+
 div{
     box-sizing: border-box;
 }
 body{
     margin: 0;
+    /* font-family: 'nanumsquare', 'gulim', 'dotum', 'arial';   font-family 는 inherit 됨 */
+    font-family: '작명2';
 }
 html{
     line-height: 1.15;      /* 기본 행간 높이 */
