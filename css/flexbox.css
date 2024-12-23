@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    border: 1px solid;
+    height: 500px;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;    width 크면 밑으로 보내고 싶을 때 */
+    align-items: center;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 5px;
+}

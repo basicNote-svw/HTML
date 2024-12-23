@@ -25,6 +25,27 @@ html{
     line-height: 1.15;      /* 기본 행간 높이 */
 }
 
+.header {
+    height: 60px;
+    display: flex;
+    background-color: tomato;
+    color: white;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    flex-grow: 1;
+    font-size: 1.8rem;
+}
+
+.menu{
+    width: 200px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
 .main-background{
     width: 100%;
     height: 500px;
