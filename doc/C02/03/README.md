@@ -174,6 +174,8 @@ margin : 10px
 
 Power Mode 부가기능
 ---
+![02](https://github.com/user-attachments/assets/75001a5b-498d-49d1-acd4-735279bb0f8a)
+
 - 코드를 입력할 때 효과 발생
 
 - 설치랑 셋팅법은 구글 검색
@@ -183,8 +185,6 @@ Power Mode 부가기능
 ---
 
 <br>
-
-![02](https://github.com/user-attachments/assets/75001a5b-498d-49d1-acd4-735279bb0f8a)
 
 Color Hints
 --- 
