@@ -152,7 +152,7 @@ margin : 10px
 
 ---
 
-<dic>
+<div>
  
  
 
