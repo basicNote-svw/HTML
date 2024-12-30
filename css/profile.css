@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: #f7f9fc;
+}
+
+i {
+    color: #6fbaf8;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #6fbaf8;
+    color: white;
+    border:  none;
+    width: 100px;
+    height: 35px;
+}
+
+h4 {
+    margin-bottom: 20px !important;
+    font-weight: 500 !important;
+}
+
+.header {
+    height: 50px;
+}
+
+.div-main {
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.top {
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-profile {
+    width: 65%;
+    height: 100%;
+}
+
+.top-profile-content {
+    border-right: 2px solid lightgray;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.top-table {
+    width: 35%;
+    padding-left: 20px;
+}
+
+.top-table table { 
+    border-collapse: collapse;
+}
+
+.top-table th {
+    padding: 0 50px;
+}
+
+.nav-tab {
+    height: 42px;
+    border-bottom: 2px solid lightgray;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.nav-link {
+    color: #6fbaf8 !important;
+    width: 100px;
+    text-align: center;
+}
+
+
+.bottom {
+    display: flex;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.works {
+    width: 20%;
+    height: 300px;
+    padding: 30px;
+}
+
+.works p,
+.about p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.about {
+    width: 60%;
+    height: 500px;
+}
+
+.sign {
+    width: 20%;
+    text-align: center;
+}
+
+.site {
+    padding: 30px 0 ;
+}
+
+.site i {
+    font-size: 70px;
+}
+
+.site-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.site-signin {
+    color: #6fbaf8;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.people {
+    margin-top: 25px;
+}
+
+.people-title {
+    padding: 10px;
+    text-align: start;
+    height: 40px;
+    border-bottom: 2px solid lightgray;
+    font-weight: 600;
+}
+
+.bottom-profile {
+    padding: 0;
+    text-align: start;
+    margin: 10px 0;
+}
+
+.bottom-profile img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.bottom-profile h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bottom-profile p,
+.bottom-profile i {
+    font-size: 12px;
+    margin: 0px;
+}
