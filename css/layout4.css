@@ -252,6 +252,39 @@ form input[type=submit] {
     opacity: 1;
 }
 
+/* .pseudo::first-letter {
+    color: red;
+    font-size: 20px;
+} */
+
+.pseudo::first-line {
+    color: red;
+    font-size: 20px;
+}
+
+.pseudo::after {    /* 내부 맨 뒤에 추가 */
+    content: '뒤에추가';
+    color: red;
+}
+
+.pseudo::before {    /* 내부 맨 앞에 추가 */
+    content: '앞에추가';
+    color: blue;
+}
+
+/* 일부 요소 스타일링 또는 숨겨져있는 요소 스타일링시 pseudo-element 사용가능 */
+.input-file::file-selector-button {
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+
+.input-file::file-selector-button:hover {
+    background-color: tomato;
+}
+
 /* media query */
 @media screen and (max-width: 1200px) {     /* 현재 브라우저 폭이 1200px 이하일 경우 */
     .main-title {
