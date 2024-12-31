@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* 컴파일하기 싫은 파일은 _파일명.scss */
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* 다른 파일에 있는 내용 가져오고 싶을 때 */
 /* 여기만 바꿔주면 전체적으로 변경됨 */
 .text {
   color: #2a4c6e;
@@ -30,4 +40,124 @@
 
 .circle-green {
   background-color: green;
+}
+
+h2 {
+  font-size: 30;
+  letter-spacing: 5px;
+  color: salmon;
+  /* 다른파일의 $변수 쓰려면 파일명.$변수 */
+  width: 150px;
+  border: 1px solid;
+}
+
+h3 {
+  font-size: 20;
+  padding: 5px;
+  color: aqua;
+  width: 200px;
+  border: 1px solid;
+}
+
+h4 {
+  font-size: 10;
+  width: 5px;
+  color: yellowgreen;
+}
+
+li {
+  list-style-type: none;
+  width: 400px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+li:active {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.alert-box-green {
+  width: 95%;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(171, 228, 171);
+}
+.alert-box-green p:nth-child(1) {
+  font-weight: 700;
+  color: darkgreen;
+}
+.alert-box-green p:nth-child(2) {
+  font-weight: 500;
+  color: darkgreen;
+}
+
+.alert-box-blue {
+  width: 95%;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(204, 221, 245);
+}
+.alert-box-blue p:nth-child(1) {
+  font-weight: 700;
+  color: darkblue;
+}
+.alert-box-blue p:nth-child(2) {
+  font-weight: 500;
+  color: darkblue;
+}
+
+.alert-box-yellow {
+  width: 95%;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(245, 245, 204);
+}
+.alert-box-yellow p:nth-child(1) {
+  font-weight: 700;
+  color: rgb(126, 126, 44);
+}
+.alert-box-yellow p:nth-child(2) {
+  font-weight: 500;
+  color: rgb(126, 126, 44);
+}
+
+.row {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+}
+.row .col-6 {
+  width: 50%;
+  border: 1px solid lightgray;
+  background-color: #eee;
+  height: 50px;
+  padding: 10px;
+}
+.row .col-3 {
+  width: 25%;
+  border: 1px solid lightgray;
+  background-color: #eee;
+  height: 50px;
+  padding: 10px;
+}
+.row .col-4 {
+  width: 33.33%;
+  border: 1px solid lightgray;
+  background-color: #eee;
+  height: 50px;
+  padding: 10px;
 }/*# sourceMappingURL=test.css.map */

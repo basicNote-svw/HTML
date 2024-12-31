@@ -1,3 +1,5 @@
+@use 'reset';   /* 다른 파일에 있는 내용 가져오고 싶을 때 */
+
 $메인색상 : #2a4c6e;
 $서브색상 : #333333;
 $기본사이즈 : 16px;     /* 여기만 바꿔주면 전체적으로 변경됨 */
@@ -35,4 +37,127 @@ $기본사이즈 : 16px;     /* 여기만 바꿔주면 전체적으로 변경됨
 .circle-green {
     @extend %circle;
     background-color: green;
+}
+
+@mixin 폰트스타일($파라미터1, $파라미터2, $파라미터3) {
+    font-size: $파라미터1;
+    #{ $파라미터2 }: 5px;
+    color: $파라미터3;
+}
+
+h2 {
+    @include 폰트스타일(30, letter-spacing, reset.$메인컬러);  /* 다른파일의 $변수 쓰려면 파일명.$변수 */
+    // 다른 파일의 @mixin 쓰려면 @include 파일명.mixin이름
+    @include reset.크기(150px);
+}
+
+h3 {
+    @include 폰트스타일(20, padding, aqua);
+    @include reset.크기(200px);
+}
+
+h4 {
+    @include 폰트스타일(10, width, yellowgreen);
+}
+
+%style {
+    list-style-type: none;
+    width: 400px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-top: -1px;
+}
+
+@mixin font($bg, $fontcolor) {
+    background-color: $bg;
+    color: $fontcolor;
+}
+
+li {
+    @extend %style;
+
+    &:active {
+        @include font(cornflowerblue, white);
+    }
+}
+
+@mixin boxStyle($bg) {
+    width: 95%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: $bg;
+}
+
+@mixin fontstyle($fw, $fc) {
+    font-weight: $fw;
+    color: $fc;
+}
+
+.alert-box-green {
+    @include boxStyle(rgb(171, 228, 171));
+
+    & p:nth-child(1) {
+        @include fontstyle(700, darkgreen);
+    }
+
+    & p:nth-child(2) {
+        @include fontstyle(500, darkgreen);
+    }
+}
+
+.alert-box-blue {
+    @include boxStyle(rgb(204, 221, 245));
+
+    & p:nth-child(1) {
+        @include fontstyle(700, darkblue);
+    }
+
+    & p:nth-child(2) {
+        @include fontstyle(500, darkblue);
+    }
+}
+
+.alert-box-yellow {
+    @include boxStyle(rgb(245, 245, 204));
+
+    & p:nth-child(1) {
+        @include fontstyle(700, rgb(126, 126, 44));
+    }
+
+    & p:nth-child(2) {
+        @include fontstyle(500, rgb(126, 126, 44));
+    }
+}
+
+
+
+@mixin colstyle($w) {
+    width: $w;
+    border: 1px solid lightgray;
+    background-color: #eee;
+    height: 50px;
+    padding: 10px;
+}
+
+.row {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    
+    .col-6 {
+        @include colstyle(50%);
+    }
+
+    .col-3 {
+        @include colstyle(25%);
+    }
+
+    .col-4 {
+        @include colstyle(33.33%);
+    }
+
 }
