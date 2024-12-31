@@ -14,3 +14,25 @@ $기본사이즈 : 16px;     /* 여기만 바꿔주면 전체적으로 변경됨
     font-size: $기본사이즈 - 2px;
     color: white;
 }
+
+%circle {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.circle-red {
+    @extend %circle;
+    background-color: red;
+}
+
+.circle-blue {
+    @extend %circle;
+    background-color: blue;
+}
+
+.circle-green {
+    @extend %circle;
+    background-color: green;
+}
