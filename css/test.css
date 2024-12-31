@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 여기만 바꿔주면 전체적으로 변경됨 */
+/* css 기본 문법의 변수 
+
+:root {
+  --main-color: red;
+}
+
+.text {
+  color: var(--main-color);
+  font-size: 26px;
+} */
+
+/* css 기본 문법의 사칙연산 
+
+.text {
+  color: var(--main-color);
+  font-size: calc(40% - 20px);
+} */
+
+.text {
+  color: #2a4c6e;
+  font-size: 26px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #333333;
+  font-size: 14px;
+  color: white;
+}/*# sourceMappingURL=test.css.map */

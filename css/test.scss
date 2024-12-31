@@ -1,0 +1,16 @@
+$메인색상 : #2a4c6e;
+$서브색상 : #333333;
+$기본사이즈 : 16px;     /* 여기만 바꿔주면 전체적으로 변경됨 */
+
+.text{
+    color: $메인색상;
+    font-size: $기본사이즈 + 10px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: $서브색상;
+    font-size: $기본사이즈 - 2px;
+    color: white;
+}
