@@ -280,9 +280,44 @@ form input[type=submit] {
     padding: 10px;
 }
 
+input[type=file]::-webkit-file-upload-button {
+    background-color: pink;
+}
+
 
 .input-file::file-selector-button:hover {
     background-color: tomato;
+}
+
+input::-webkit-input-placeholder {
+    color: salmon;
+}
+
+input[type=range] {
+    appearance: none;   /* 브라우저 기본 CSS 안보이게 */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: darkslateblue;
+    width: 50px;
+    height: 50px;
+    appearance: none;   /* 브라우저 기본 CSS 안보이게 */
+}
+
+progress {
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    appearance: none;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    appearance: none;
+    background-color: yellowgreen;
+    border-radius: 10px;
 }
 
 /* media query */
