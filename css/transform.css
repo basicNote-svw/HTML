@@ -1,0 +1,70 @@
+.ani-text {
+    /* transform: rotate(360deg); 회전 */
+    /* transform: translateX(100px);  좌표이동 */
+    /* transform: translateY(100px);   좌표이동 */
+    /* transform: scale(0.5);  크기 변화 */
+    text-align: center;
+}
+
+.ani-text:hover { 
+    animation-name: 작명;
+    animation-duration: 1s;
+}
+
+@keyframes 작명 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.btn {
+    padding: 15px 20px;
+    font-size: 20px;
+    background: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+}
+
+.btn:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg)}
+    25% { transform: rotate(-8deg)}
+    50% { transform: rotate(8deg)}
+    75% { transform: rotate(-8deg)}
+    100% { transform: rotate(0deg)}
+}
+
+.add {
+    margin: 150px auto;
+    text-align: center;
+    font-size: 70px;
+    width: 84px;
+    cursor: pointer;
+}
+
+.add:hover {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(-15deg) }
+    100% { transform: rotate(45deg) scale(1.5)}
+}

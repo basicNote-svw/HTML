@@ -47,6 +47,38 @@ html{
     justify-content: space-around;
 }
 
+/* nav */
+.ani-nav {
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+    transition: all 1s;
+    transform: translate(-150px);
+}
+
+.ani-nav:hover {
+    transform: translateX(0);
+    text-align: center;
+}
+
+.ani-nav:hover p {
+    animation-name: slide;
+    animation-duration: 1s
+}
+
+@keyframes slide {
+    0% { transform: translateX(-250px) }
+    50% { transform: translateX(50px) skewX(-30deg) }
+    100% { transform: translateX(0px) }
+}
+
+/* main */
+
 .main-background{
     width: 100%;
     height: 500px;
