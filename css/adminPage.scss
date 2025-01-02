@@ -1,0 +1,343 @@
+$side-width: 50px;
+$top-header-height: 60px;
+$main-fs: 20px;
+$main-color: slateblue;
+$shadow: 2px 2px 5px #b5b5b58a;
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* header */
+/* top-header */
+.top-header {
+    position: absolute;
+    width: calc(100vw - $side-width);
+    height: $top-header-height;
+    right: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid lightgray;
+    z-index: 5;
+
+    .search-box {
+        display: flex;
+
+        .search {
+            border: 1px solid lightgray;
+            height: 30px;
+            width: 150px;
+            padding: 0 10px;
+            border-radius: 5px 0 0 5px;
+
+            &:focus {
+                width: 250px;
+                transition: all 1s;
+                outline: 1px solid lightgray;
+            }
+        }
+
+        .search-btn {
+            border: none;
+            height: 30px;
+            width: 35px;
+            background-color: rgb(70, 70, 70);
+            color: #eee;
+            border-radius: 0 5px 5px 0;
+        }
+
+    }
+
+    .personal-box {
+        display: flex;
+        gap: 15px;
+        color: gray;
+
+        .inform-box {
+            position: relative;
+        }
+
+        .inform {
+            position: absolute;
+            top: 0;
+            right: -5px;
+            border-radius: 3px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 8px;
+            font-weight: 600;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .mobile-box {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* side-header */
+.side-header {
+    position: relative;
+    height: 100vh;
+    width: $side-width;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+    font-size: $main-fs - 2px;
+    color: #eee;
+    z-index: 10;
+
+    .menu-name {
+        display: none;
+    }
+
+    &:hover {
+        width: 160px;
+        transition: all 1s;
+
+        .menu-box {
+            display: flex;
+            cursor: pointer;
+            width: 100%;
+            justify-content: left;
+            align-items: center;
+            gap: 15px;
+            padding: 0 20px;
+
+            .menu-name {
+                display: block;
+                animation-name: appearance;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    
+}
+
+@keyframes appearance {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+/* main */
+@mixin color-card($colors) {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $colors;
+    border-radius: 10px 0 0 10px;
+}
+
+
+main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - $top-header-height);
+    width: calc(100vw - $side-width);
+    background-color: #eee;
+    padding: 20px;
+
+    h3, h4 {
+        font-weight: 600;
+        color: rgb(70, 70, 70);
+    }
+
+    .dashboard-box {
+
+        .card-box {
+            gap: 10px;
+            width: 100%;
+            height: 130px;
+            margin: 25px auto;
+            display: flex;
+
+            .card {
+                height: 100%;
+                width: 320px;
+                margin: 0 auto;
+                border-radius: 10px;
+                position: relative;
+                font-size: $main-fs;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                box-shadow: $shadow;
+
+                &:nth-child(1)::before {
+                    @include color-card(rgb(73, 161, 237));
+                }
+
+                &:nth-child(2)::before {
+                    @include color-card(rgb(83, 188, 83));
+                }
+
+                &:nth-child(3)::before {
+                    @include color-card($main-color);
+                }
+
+                &:nth-child(4)::before {
+                    @include color-card(rgb(233, 233, 59));
+                }
+
+                .card-left {
+                    padding: 30px;
+
+                    p {
+                        font-weight: 700;
+                    }
+                }
+
+                .card-right {
+                    padding: 30px;
+                    color: gray;
+                    font-size: $main-fs + 15px;
+                }
+            }
+        }
+    }
+
+    .chart-list-box {
+        height: 400px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            font-size: $main-fs - 2px;
+            line-height: 45px;
+        }
+
+        .title {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid lightgray;
+            height: 45px;
+            padding: 0 30px;
+        }
+
+        .chart-box {
+            width: 880px;
+            box-shadow: $shadow;
+
+            .chart {
+                width: 100%;
+                height: 360px;
+                padding: 20px 30px;
+                background-color: white;
+            }
+        }
+
+        .list-box {
+            width: 430px;
+            height: calc(45px * 4 - 3px);
+            box-shadow: $shadow;
+
+            .list {
+                height: 45px;
+                background-color: white;
+                border: 1px solid lightgray;
+                margin-top: -1px;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 30px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-header {
+        background-color: white;
+        position: fixed;
+
+        .search-box,
+        .personal-box {
+            display: none;
+        }
+
+        .mobile-box{
+            display: block;
+            position: absolute;
+            right: 30px;
+            font-size: $main-fs;
+            border: 1px solid lightgray;
+            width: 45px;
+            text-align: center;
+        }
+    }
+    .side-header {
+        position: fixed;
+    }
+
+    main {
+        overflow-x: hidden;
+
+        .dashboard-box {
+            height: 750px;
+    
+            .card-box {
+                height: auto; /* 높이 자동 조정 */
+                display: flex;
+                flex-direction: column; /* 세로 정렬 */
+    
+                .card {
+                    width: 100% !important; /* 가로로 꽉 차도록 설정 */
+                    margin: 10px 0; /* 카드 간 간격 조정 */
+                }
+            }
+        }
+        .chart-list-box {
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            gap: 30px;
+
+            .chart-box,
+            .list-box {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+
+
+        
+    }
+}
